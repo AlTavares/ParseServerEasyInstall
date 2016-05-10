@@ -6,7 +6,6 @@
 
 var app = require('../app');
 var debug = require('debug')('app:server');
-var config = require('../config.json')
 
 var https = require('https')
 var fs = require('fs')
@@ -19,7 +18,7 @@ var options = {
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(6000 || config.env.httpsPort);
+var port = normalizePort(6000);
 app.set('port', port);
 
 /**

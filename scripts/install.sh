@@ -25,6 +25,7 @@ sudo apt-get -y install mongodb
 
 # Create app directory
 sudo mkdir -p /usr/src/apps
+sudo chown -R ubuntu /usr/src/apps/ParseServer
 
 # Bundle app source
 sudo cp -rf ../ParseServer /usr/src/apps
