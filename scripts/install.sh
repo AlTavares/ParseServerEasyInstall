@@ -24,10 +24,10 @@ sudo apt-get install -y nodejs
 sudo apt-get -y install mongodb
 
 # Create app directory
-sudo mkdir -p /usr/src/app
+sudo mkdir -p /usr/src/apps
 
 # Bundle app source
-sudo cp -rf ../ParseServer /usr/src/app
+sudo cp -rf ../ParseServer /usr/src/apps
 
-cd /usr/src/app
-npm install
+cd /usr/src/apps/ParseServer/app
+sudo npm install
