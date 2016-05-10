@@ -1,9 +1,9 @@
 #!/bin/sh
 
 sudo apt-get -y install git bc
-sudo git clone https://github.com/letsencrypt/letsencrypt /opt/letsencrypt
+sudo git clone https://github.com/certbot/certbot.git /opt/letsencrypt
 
-/opt/letsencrypt-auto certonly -a webroot --webroot-path=/usr/share/nginx/html -d altavares.tk -d www.altavares.tk
+/opt/letsencrypt/letsencrypt-auto certonly -a webroot --webroot-path=/usr/share/nginx/html -d altavares.tk -d www.altavares.tk
 
 sudo service nginx reload
 
