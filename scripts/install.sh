@@ -5,6 +5,9 @@ echo "export LC_ALL=en_US.UTF-8" >> ~/.bash_profile
 echo "export LANG=en_US.UTF-8" >> ~/.bash_profile
 . ~/.bash_profile
 
+#install ubuntu updates
+sudo apt-get upgrade -y
+
 #ppa nginx mainline
 echo "deb http://nginx.org/packages/mainline/ubuntu/ trusty nginx" | sudo tee -a /etc/apt/sources.list
 echo "deb-src http://nginx.org/packages/mainline/ubuntu/ trusty nginx" | sudo tee -a /etc/apt/sources.list
@@ -23,12 +26,7 @@ sudo apt-get install -y nodejs
 # Install MongoDB
 sudo apt-get -y install mongodb
 
-# Create app directory
-sudo mkdir -p /usr/src/apps
-sudo chown -R ubuntu /usr/src/apps
+# Install PM2
+sudo npm install pm2 -g
 
-# Bundle app source
-sudo cp -rf ../ParseServer /usr/src/apps
-
-cd /usr/src/apps/ParseServer/app
-sudo npm install
+sh copy-dir.sh
