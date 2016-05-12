@@ -8,6 +8,7 @@ sudo chown -R ubuntu /usr/src/apps
 sudo cp -rf ../ParseServer /usr/src/apps
 
 cd /usr/src/apps/ParseServer/app
+sudo chown -R ubuntu /usr/src/apps
 sudo npm install
 
 pm2 start ./bin/www
