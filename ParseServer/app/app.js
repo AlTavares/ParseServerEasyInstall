@@ -11,6 +11,7 @@ var app = express();
 // Serve the Parse API on the /api URL prefix
 var api = require("./parse/api")
 app.use("/api", api);
+app.ParseServer = api
 
 //Socket.io
 // uncomment if you want to use it
