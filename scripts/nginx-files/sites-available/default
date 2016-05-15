@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name altavares.tk;
+    server_name altavares.tk www.altavares.tk;
     return 301 https://$server_name$request_uri;
 }
 
