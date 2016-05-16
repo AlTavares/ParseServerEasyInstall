@@ -9,9 +9,9 @@ var routes = require('./routes/index');
 var app = express();
 
 // Serve the Parse API on the /api URL prefix
-var api = require('./parse/api')
-app.use('/api', api);
-app.ParseServer = api
+var parse = require('./parse/api')
+app.use('/parse', parse);
+app.ParseServer = parse
 
 //Serve the Parse Dashboard on the /dashboard URL prefix
 var dashboard = require('./parse/dashboard')

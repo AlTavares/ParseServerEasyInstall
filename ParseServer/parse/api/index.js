@@ -5,7 +5,7 @@ var api = new ParseServer({
   cloud: __dirname + '/cloud/main.js',
   appId: "MyAppId",
   masterKey: "MyMasterKey", //Add your master key here. Keep it secret!
-  serverURL: "http://localhost:3000/api"
+  serverURL: "http://localhost:3000/parse"
   // liveQuery: {
   //   classNames: [] // List of classes to support for query subscriptions
   // }
