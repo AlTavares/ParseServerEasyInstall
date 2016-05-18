@@ -8,8 +8,8 @@ var dashboard = new ParseDashboard({
   "apps": [
     {
       "serverURL": serverURL,
-      "appId": "myAppId",
-      "masterKey": "myMasterKey",
+      "appId": "MyAppId",
+      "masterKey": "MyMasterKey",
       "appName": "MyApp"
     }
   ],
