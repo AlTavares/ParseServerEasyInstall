@@ -8,6 +8,9 @@ echo "export LANG=en_US.UTF-8" >> ~/.bash_profile
 #install ubuntu updates
 sudo apt-get upgrade -y
 
+#set timezone
+sudo timedatectl set-timezone America/Sao_Paulo
+
 #ppa nginx mainline
 echo "deb http://nginx.org/packages/mainline/ubuntu/ trusty nginx" | sudo tee -a /etc/apt/sources.list
 echo "deb-src http://nginx.org/packages/mainline/ubuntu/ trusty nginx" | sudo tee -a /etc/apt/sources.list

@@ -10,7 +10,7 @@ cd /usr/src/apps/ParseServer
 sudo chown -R ubuntu /usr/src/apps
 sudo npm install
 
-pm2 start /usr/src/apps/ParseServer/start.sh --name="ParseServer" --watch --ignore-watch="test node_modules *.log logs"
+pm2 start /usr/src/apps/ParseServer/start.sh --name="ParseServer"
 pm2 startup ubuntu
 sudo su -c "env PATH=$PATH:/usr/bin pm2 startup ubuntu -u ubuntu --hp /home/ubuntu"
 pm2 save
