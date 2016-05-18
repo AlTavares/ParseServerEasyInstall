@@ -3,6 +3,8 @@
 #fix locale
 echo "export LC_ALL=en_US.UTF-8" >> ~/.bash_profile
 echo "export LANG=en_US.UTF-8" >> ~/.bash_profile
+echo "export LC_CTYPE=en_US.UTF-8" >> ~/.bash_profile
+echo "export LANGUAGE=en_US.UTF-8" >> ~/.bash_profile
 . ~/.bash_profile
 
 #install ubuntu updates
