@@ -30,7 +30,7 @@ server {
   }
 
     location ~ ^/(images/|img/|javascript/|js/|css/|stylesheets/|flash/|media/|static/|robots.txt|humans.txt|favicon.ico) {
-        root /var/www/TVHotel/public;
+        root /usr/src/apps/ParseServer/public;
         access_log off;
         expires max;
     }
