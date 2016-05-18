@@ -1,4 +1,5 @@
 #!/bin/sh
 SERVER_IP=""
-rsync -ravzup -e "ssh -i ~/aws.pem" --exclude "logs" --exclude "node_modules" ParseServer/ ubuntu@$SERVER_IP:/usr/src/apps/ParseServer/
-ssh -i ~/aws.pem ubuntu@SERVER_IP "pm2 restart ParseServer"
+SSH_KEY="$HOME/aws.pem"
+rsync -ravzup -e "ssh -i $SSH_KEY" --exclude "logs" --exclude "node_modules" ParseServer/ ubuntu@$SERVER_IP:/usr/src/apps/ParseServer/
+ssh -i $SSH_KEY ubuntu@$SERVER_IP "pm2 restart ParseServer"
